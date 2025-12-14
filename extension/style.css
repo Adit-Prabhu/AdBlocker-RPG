@@ -1,0 +1,139 @@
+.ad-rpg-container {
+    background: linear-gradient(135deg, #1a1a2e 0%, #16213e 100%);
+    color: white;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    border: 3px solid #f1c40f;
+    border-radius: 12px;
+    padding: 12px;
+    box-sizing: border-box;
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+    overflow: hidden;
+    position: relative;
+    box-shadow: 0 4px 15px rgba(0, 0, 0, 0.3), inset 0 0 20px rgba(241, 196, 15, 0.1);
+}
+
+.ad-rpg-tier {
+    position: absolute;
+    top: 0;
+    right: 0;
+    padding: 3px 10px;
+    font-size: 10px;
+    font-weight: bold;
+    color: white;
+    border-radius: 0 9px 0 8px;
+    text-transform: uppercase;
+    letter-spacing: 1px;
+}
+
+.ad-rpg-header {
+    font-size: 14px;
+    font-weight: bold;
+    margin-bottom: 6px;
+    color: #f1c40f;
+    text-shadow: 0 0 10px rgba(241, 196, 15, 0.5);
+}
+
+.ad-rpg-monster-img {
+    width: 70px;
+    height: 70px;
+    margin-bottom: 8px;
+    border-radius: 50%;
+    border: 2px solid #f1c40f;
+    box-shadow: 0 0 15px rgba(241, 196, 15, 0.4);
+    animation: pulse 2s infinite;
+}
+
+@keyframes pulse {
+    0%, 100% { transform: scale(1); }
+    50% { transform: scale(1.05); }
+}
+
+.ad-rpg-health-bar {
+    width: 85%;
+    height: 12px;
+    background-color: #34495e;
+    border-radius: 6px;
+    margin-bottom: 4px;
+    overflow: hidden;
+    border: 1px solid #2c3e50;
+}
+
+.ad-rpg-health-fill {
+    height: 100%;
+    background: linear-gradient(90deg, #27ae60 0%, #2ecc71 100%);
+    width: 100%;
+    transition: width 0.3s ease, background-color 0.3s;
+    border-radius: 5px;
+}
+
+.ad-rpg-hp-text {
+    font-size: 11px;
+    color: #bdc3c7;
+    margin-bottom: 6px;
+}
+
+.ad-rpg-attack-btn {
+    background: linear-gradient(135deg, #e67e22 0%, #d35400 100%);
+    border: none;
+    color: white;
+    padding: 8px 20px;
+    border-radius: 6px;
+    cursor: pointer;
+    font-weight: bold;
+    font-size: 13px;
+    transition: all 0.15s ease;
+    box-shadow: 0 3px 10px rgba(230, 126, 34, 0.4);
+}
+
+.ad-rpg-attack-btn:hover {
+    transform: scale(1.05);
+    box-shadow: 0 5px 15px rgba(230, 126, 34, 0.6);
+}
+
+.ad-rpg-attack-btn:active {
+    transform: scale(0.95);
+}
+
+.ad-rpg-attack-btn:disabled {
+    background: #7f8c8d;
+    cursor: not-allowed;
+    box-shadow: none;
+}
+
+.ad-rpg-stats {
+    font-size: 11px;
+    margin-top: 6px;
+    color: #bdc3c7;
+}
+
+.ad-rpg-victory {
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    background: linear-gradient(135deg, rgba(39, 174, 96, 0.95) 0%, rgba(46, 204, 113, 0.95) 100%);
+    display: none;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    color: white;
+    text-align: center;
+    padding: 10px;
+    box-sizing: border-box;
+}
+
+.ad-rpg-victory .victory-text {
+    font-size: 18px;
+    font-weight: bold;
+    margin-bottom: 8px;
+    text-shadow: 0 2px 4px rgba(0,0,0,0.3);
+}
+
+.ad-rpg-victory .victory-rewards {
+    font-size: 12px;
+    opacity: 0.95;
+}
