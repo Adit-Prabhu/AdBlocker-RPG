@@ -1,4 +1,4 @@
-# AdBlocker RPG: The Quest for a Clean Web
+# AdBlocker RPG: Essentially RPG but with Ads 
 
 Welcome to AdBlocker RPG, where your browsing experience becomes an epic quest. Instead of passively hiding annoying advertisements, this extension transforms them into fearsome monsters that you must defeat. Every popup is a dragon, every banner is an orc, and every tracker is a spider waiting to be squashed.
 
@@ -76,13 +76,4 @@ python test_server.py
 
 ## Disclaimer
 
-This project is a proof of concept for gamified web browsing and is intended for educational purposes.
-
-
-Updated: 2025-12-19
-
-Updated: 2025-12-19
-
-Updated: 2025-12-19
-
-Updated: 2025-12-19
+This project is a proof of concept for gamified web browsing and is intended to have fun :)
